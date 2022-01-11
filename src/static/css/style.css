@@ -1,0 +1,260 @@
+
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap'); */
+
+body {
+    margin:0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif ;
+    color: #444;
+    line-height: 1.7;
+    /* background:var(--bg2-color); */
+}
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+input:focus {
+    outline: none;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+  }
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap'); */
+
+
+:root {
+    --text-color:#444 ;
+    --text-sec-color:#797878 ;
+    --bg1-color :#55c6d8 ;
+}
+
+
+
+/* Style For FullPage */
+.fullSection {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.thirdSection {
+    width: 33.33%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.secondSection {
+    width: 66.66%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.innerSection {
+    width: 100%;
+}
+
+.bgSection {
+    background:#fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,.03) ;
+    padding: 10px;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-item-sec {
+    display: flex;
+    flex-direction: column ;
+}
+
+.form-item-sec input ,
+.form-item-sec textarea ,
+.form-item-sec .ant-select
+  {
+    border:1px solid #e0e0e0;
+    border-radius: 5px;
+}
+
+.form-item-sec span {
+    font-size: 14px;
+    color: var(--text-sec-color);
+    margin-bottom: 5px;
+}
+
+.form-item-sec button {
+    width: 100%;
+    height:40px;
+    background: #55c6d8;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+}
+
+.form-item-file {
+    width: 100%;
+    height: 120px;
+    border:2px dashed #55c6d8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #55c6d8;
+    font-size: 21px;
+}
+
+.form-item-file .svg-inline--fa {
+    margin-right: 20px;
+}
+
+.category-add-upload .ant-upload.ant-upload-select-picture-card {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: none;
+    /* display: flex; */
+    align-items: center;
+}
+
+.form-item-multiSec {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.form-item-multiSec .ant-form-item {
+    width: 25%;
+    margin-right: 10px;
+}
+
+.form-item-multiSec input ,
+.form-item-multiSec textarea ,
+.form-item-multiSec .ant-select
+  {
+    border:1px solid #e0e0e0;
+    border-radius: 5px;
+    min-height: 33px;
+}
+
+.form-item-multiSec .svg-inline--fa {
+    width: 20px;
+    height: 20px;
+    background: #55c6d8;
+    color: #fff;
+    border-radius: 50%;
+    padding: 0 5px;
+    cursor: pointer;
+}
+
+.form-item-multiSec-btn {
+    height:35px;
+    background: none;
+    color: #55c6d8;
+    width: 120px;
+    border: 1px solid #55c6d8;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width:990px) {
+    .thirdSection {
+        width: 50%;
+    }
+    .secondSection {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:550px) {
+    .thirdSection {
+        width: 100%;
+    }
+}
+
+
+/* Style For Table */
+
+.table-trash-icon {
+    width: 30px;
+    height: 30px;
+    border-radius:50% ;
+    background: tomato;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.table-more-icon {
+    width: 30px;
+    height: 30px;
+    border-radius:50% ;
+    border:1px solid #55c6d8;
+    color: #55c6d8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.table-list-action {
+    width: 100px;
+    background: #fff;
+    box-shadow: 0 3px 6px -4px #0000001f,0 6px 16px #00000014,0 9px 28px 8px #0000000d;
+    padding: 5px 0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.table-list-action-item {
+    width: 100%;
+    height: 30px;
+    /* border-bottom: 1px solid #e0e0e0; */
+    transition: all 0.3s;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    font-size: 13px;
+    color: #444;
+}
+
+.table-list-action-item .svg-inline--fa  {
+    margin-right: 10px;
+}
+
+
+.table-list-action-item:hover {
+    background: #f5f5f5;
+    transition: all 0.3s;
+}
+
+/* ######################### */
+/* ######################### */
+/* ######################### */
+/* ######################### */
+
+/* Style For Admin */
+

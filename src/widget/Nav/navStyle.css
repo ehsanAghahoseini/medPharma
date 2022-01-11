@@ -1,0 +1,349 @@
+
+/* Style For Nav */
+
+.nav {
+    width: 250px;
+    background: var(--bg1-color);
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s;
+    overflow: hidden;
+    z-index: 1000;
+    box-shadow: 0 0 15px 0 rgba(34,41,47,.05);
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+    color: #fff;
+    border-radius: 0 30px 30px 0;
+}
+
+.nav::-webkit-scrollbar {
+    display: none;
+}
+
+.nav-change {
+    width: 80px;
+    transition: all 0.3s;
+}
+
+.nav-change:hover {
+    width: 250px;
+    transition: all 0.3s;
+}
+
+.nav-bg {
+    position: fixed;
+    z-index: 900;
+    left: 0;
+    top: 0 ;
+    bottom: 0;
+    width: 0;
+    background: rgba(34,41,47,.5);
+    /* background: red; */
+    transition: all 0.3s;
+    display: block;
+}
+
+.nav-bg-active {
+    width: 100%;
+}
+
+.nav-head {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding:0 20px;
+    margin-top:35px;
+    position: relative;
+    justify-content: space-between;
+}
+
+
+/* .nav-change .nav-head {
+    justify-content: center;
+} */
+
+/* .nav-change:hover .nav-head {
+    justify-content: space-around;
+} */
+
+.nav-head .nav-head-circle-icon {
+    width: 15px;
+    height: 15px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.nav-head-align-icon {
+    display: none;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+
+.nav-change .nav-head .svg-inline--fa{
+    display: none;
+
+}
+
+.nav-change:hover .nav-head .nav-head-circle-icon{
+    display: unset;
+}
+
+.nav-head img {
+    width: 50px;
+    transition: all 0.3s;
+    margin: 0 auto;
+}
+
+.nav-change .nav-head img {
+    width: 50px;
+}
+
+.nav-change:hover .nav-head img {
+    /* width: 100px; */
+    transition: all 0.3s;
+}
+
+.nav-head-bottom {
+    width: 100%;
+    background: linear-gradient(180deg,#283046 44%,rgba(40,48,70,.51) 73%,rgba(40,48,70,0));
+    height: 50px;
+}
+
+.nav-profile {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 151px;
+}
+
+.nav-profile-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    transition: all 0.3s;
+    border-radius: 5px;
+}
+
+.nav-profile-head:hover {
+    transition: all 0.3s;
+    background: rgba(255, 255, 255, 0.13);
+}
+
+.nav-profile-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.nav-change .nav-profile-img {
+    width: 30px;
+    height: 30px;
+    transition: all 0.3s;
+}
+
+.nav-change:hover .nav-profile-img {
+    width: 60px;
+    height: 60px;
+    transition: all 0.3s;
+}
+
+.nav-profile span {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.nav-change .nav-profile span {
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.nav-change:hover .nav-profile span {
+    opacity: 1;
+    transition: all 0.3s;
+    transition-delay: 0.3s;
+}
+
+
+.nav-profile-icon {
+    width: 200px;
+    height: 30px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-change .nav-profile-icon {
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.nav-change:hover .nav-profile-icon {
+    opacity: 1;
+    transition: all 0.3s;
+    transition-delay: 0.3s;
+}
+
+
+.nav-profile-icon-item {
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 3px;
+    transition: all 0.3s;
+    background: unset;
+}
+
+.nav-profile-icon-item:hover {
+    background: rgba(255, 255, 255, 0.13);
+    transition: all 0.3s;
+}
+
+.nav-cont {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+.nav-cont-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    transition: all 0.3s;
+}
+
+
+
+.nav-cont-item-inner {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s;
+    cursor: pointer;
+    padding-left: 10px;
+    background: unset;
+    border-radius: 5px;
+}
+
+.nav-cont-item-active .nav-cont-item-inner {
+    border-radius: 5px;
+    background: var(--bg1-color);
+}
+
+.nav-cont-item-inner:hover > span {
+    margin-left: 25px;
+    transition: all 0.3s;
+}
+
+.nav-cont-item-inner:hover {
+    background: rgba(255, 255, 255, 0.13);
+    transition: all 0.3s;
+}
+
+.nav-cont-item .svg-inline--fa {
+    width: 20px;
+    height: 20px;
+    color:#fff;
+}
+
+
+.nav-cont-item span {
+    margin-left: 20px;
+    color: #fff;
+    /* transition: all 0.3s; */
+    font-size: 15px;
+}
+
+.nav-cont-item-inner a {
+    display: flex;
+}
+
+.nav-cont-item-submenu {
+    display: none;
+}
+
+.nav-cont-item-active .nav-cont-item-submenu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+
+
+.nav-cont-item-submenu-item {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav-cont-item-submenu-item span {
+    font-size: 13px;
+    margin-left: 10px;
+    transition: all 0.3s;
+}
+
+.nav-cont-item-submenu-item:hover > span {
+    margin-left: 15px;
+    transition: all 0.3s;
+}
+
+.nav-cont-item-submenu-item  .svg-inline--fa  {
+    width: 10px;
+    height: 10px;
+}
+
+.nav-change .nav-cont-item span {
+    opacity: 0;
+}
+
+.nav-change:hover .nav-cont-item span {
+    display: unset;
+    opacity: 1;
+    transition: all 0.3s;
+    transition-delay: 0.3s;
+}
+
+
+
+@media only screen and (max-width:990px) {
+    .nav-head-circle-icon {
+        display: none;
+    }
+    .nav {
+        left:-250px;
+    }
+    .nav-active-mobile {
+        left: 0px ;
+        transition-delay: 0.4s;
+    }
+    .nav-active-mobile-close {
+        transition-delay: 0.2s;
+    }
+    .nav-head-align-icon {
+        display: unset;
+    }
+}

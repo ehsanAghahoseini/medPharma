@@ -1,0 +1,125 @@
+
+/* Style For Auth */
+
+.auth {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    background: #e0e0e0;
+}
+
+.auth-image {
+    width: calc(100% - 500px);
+    min-height: 100vh;
+    background: #fdfdfd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-image img {
+    max-width: 60%;
+}
+
+.auth-main {
+    width: 500px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    border-left:1px solid #e0e0e0;
+    background: #fff;
+}
+
+
+.auth-main-inner {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.auth-main-inner form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.auth-main-inner-form-item {
+    width: 100%;
+
+}
+
+.auth-main-inner-logo {
+    max-width: 100px;
+    margin: 50px 0;
+}
+
+.auth-main-inner-form-item {
+    width: 100%;
+    height: 60px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.auth-main-inner-form-item-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.auth-main-inner-form-item input {
+    width: calc(100% - 40px);
+    width: 100%;
+    height: 50px;
+    border: none;
+    color: #525252;
+}
+
+.auth-main-inner-form-bottom {
+    display: flex;
+    height: 45px;
+    width: 100%;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.auth-main-inner-form-bottom-btn {
+    width: 45%;
+    height: 45px;
+    background: #55c6d8;
+    border-radius: 30px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.auth-main-inner-form-bottom span {
+    margin-left: 10px;
+}
+
+
+
+@media only screen and (max-width:767px) {
+    .auth-main {
+        width: 100%;
+    }
+    .auth-image {
+        display: none;
+    }
+    .auth-main-inner {
+        width: 100%;
+    }
+}

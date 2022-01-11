@@ -1,0 +1,117 @@
+
+/* Style For Loader Btn */
+
+.loaderBtn {
+    --color: white;
+    --size-mid: 6vmin;
+    --size-dot: 1.5vmin;
+    --size-bar: 0.4vmin;
+    --size-square: 3vmin;
+    
+    display: block;
+    position: relative;
+    display: grid;
+    place-items: center;
+  }
+  
+  .loaderBtn::before,
+  .loaderBtn::after {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+  }
+
+  .loaderBtn.--2::before,
+.loaderBtn.--2::after {
+  width: var(--size-dot);
+  height: var(--size-dot);
+  background-color: var(--color);
+  border-radius: 50%;
+  opacity: 0;
+  animation: loader-2 0.8s cubic-bezier(0.2, 0.32, 0, 0.87) infinite;
+}
+
+.loaderBtn.--2::after {
+  animation-delay: 0.3s;
+}
+
+@keyframes loader-2 {
+  0%, 80%, 100% {
+    opacity: 0;
+  }
+  
+  33% {
+    opacity: 1;
+  }
+  
+  0%, 100% {
+    transform: translateX(-4vmin);
+  }
+  
+  90% {
+    transform: translateX(4vmin);
+  }
+}
+
+
+
+/* Style For Loader */
+.loader {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    background: rgba(255, 255, 255, 0.726);
+    z-index: 100000000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.loader #loader-6{
+    left: -2.5px;
+}
+
+.loader  #loader-6 span{
+    display: inline-block;
+    width: 5px;
+    height: 20px;
+    background-color: var(--bg1-color);
+    margin-left: 5px;
+}
+
+.loader  #loader-6 span:nth-child(1){
+    animation: grow 0.5s ease-in-out infinite;
+}
+
+#loader-6 span:nth-child(2){
+    animation: grow 0.5s ease-in-out 0.15s infinite;
+}
+
+.loader  #loader-6 span:nth-child(3){
+    animation: grow 0.5s ease-in-out 0.30s infinite;
+}
+
+.loader  #loader-6 span:nth-child(4){
+    animation: grow 0.5s ease-in-out 0.45s infinite;
+}
+
+@keyframes grow{
+0%, 100%{
+    -webkit-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    -o-transform: scaleY(1);
+    transform: scaleY(1);
+}
+
+50%{
+    -webkit-transform: scaleY(1.8);
+    -ms-transform: scaleY(1.8);
+    -o-transform: scaleY(1.8);
+    transform: scaleY(1.8);
+}
+}
