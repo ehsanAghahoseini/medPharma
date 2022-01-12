@@ -92,6 +92,8 @@ input[type=number] {
   {
     border:1px solid #e0e0e0;
     border-radius: 5px;
+    min-height: 33px;
+
 }
 
 .form-item-sec span {
@@ -251,10 +253,61 @@ input[type=number] {
     transition: all 0.3s;
 }
 
-/* ######################### */
-/* ######################### */
-/* ######################### */
-/* ######################### */
 
-/* Style For Admin */
+/* Style For Cat Cart */
+
+.cat-cart {
+    width: 160px;
+    padding: 5px;
+}
+
+.cat-cart-inner {
+    width: 100%;
+    height: 220px;
+    background: #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.cat-cart-inner img {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+}
+
+.cat-cart-inner h3 {
+    font-size: 14px;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.cat-cart-inner-des {
+    width: 100px;
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-around;
+}
+
+.cat-cart-inner-des-item {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#55c6d8 ;
+    border: 1px solid #55c6d8;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:390px) {
+    .cat-cart {
+        width: 100%;
+    }
+}
+
 
